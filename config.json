@@ -2,8 +2,7 @@
   "mustMatch": true,
   "logPath": "/proxy.log",
   "allowedReferers": [
-      "http://a.example.com",
-      "http://localhost"
+      "*"
     ],
   "allowedUrls" : [
     {
