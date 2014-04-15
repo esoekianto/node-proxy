@@ -1,5 +1,5 @@
 {
-  "mustMatch": true,
+  "mustMatch": false,
   "logPath": "/proxy.log",
   "allowedReferers": [
       "*"
@@ -13,6 +13,10 @@
     },
     {
         "url": "http://services.arcgisonline.com/ArcGIS/rest/",
+        "matchAll": true
+    },
+    {
+        "url": "http://www.google.com",
         "matchAll": true
     }
   ]

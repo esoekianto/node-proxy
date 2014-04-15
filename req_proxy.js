@@ -24,6 +24,7 @@ function getConfig(cb){
 }
 
 function cleanUri(uri){
+  //TODO: check if uri is empty or encoded or not a url
   return true; 
 }
 
@@ -42,13 +43,15 @@ function validateUri(uri, allowedUris, mustMatch){
   //   if (url.parse(uri).host === url.parse(allowed).host) // check path later 
   //     return true
   // });
-  if(allowedUris.some(function(value){
-    return uri.indexOf(value) > -1;
-  })){
-    console.log('found one.');
-    return true;
-  }
-  if (mustMatch) return false; else return true;
+  //TODO: check url
+  // if(allowedUris.some(function(value){
+  //   return uri.indexOf(value) > -1;
+  // })){
+  //   console.log('found one.');
+  //   return true;
+  // }
+  //TODO: if url has username and password get token
+  if (mustMatch === true) return false; else return true;
 }
 
 exports.handle = function(req, res) {
