@@ -1,0 +1,10 @@
+{
+    "name": "node-proxy",
+    "version": "0.0.1",
+    "description": "Proxy using node.js",
+	"dependencies": {
+		 
+	},"engines": {
+				        
+    }
+}

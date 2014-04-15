@@ -1,0 +1,20 @@
+{
+  "mustMatch": true,
+  "logPath": "/proxy.log",
+  "allowedReferers": [
+      "http://a.example.com",
+      "http://localhost"
+    ],
+  "allowedUrls" : [
+    {
+        "url": "http://route.arcgis.com",
+        "username": "erwi7452",
+        "password": "erwi7452",
+        "matchAll": true
+    },
+    {
+        "url": "http://services.arcgisonline.com/ArcGIS/rest/",
+        "matchAll": true
+    }
+  ]
+}
